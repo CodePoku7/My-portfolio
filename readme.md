@@ -14,7 +14,7 @@ This portfolio website is created by me and for myself.
 
 ### Screenshot
 
-![](./assets/desktop-design.jpg)
+![](./assets/Toomas%20Rebane%20Portfoolio.png)
 
 ### Links
 
