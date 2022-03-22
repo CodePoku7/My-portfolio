@@ -1,0 +1,154 @@
+/*************************************/
+/* BELOW 1200px */
+/*************************************/
+/* 1200/16=em */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container-img {
+    width: 35%;
+  }
+
+  .sec-container {
+    width: 65%;
+  }
+}
+
+/*************************************/
+/* BELOW 1024px */
+/*************************************/
+@media (max-width: 64em) {
+  .header {
+    padding: 0 5rem;
+    width: 50%;
+  }
+  .container-img {
+    position: absolute;
+    height: 52rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .img-logo {
+    height: 5rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  .icon-mobile-nav[name="close"] {
+    color: #333;
+  }
+
+  .nav {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.5s ease-in;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    font-size: 1.8rem;
+  }
+
+  .sec-container {
+    width: 100%;
+    margin-top: 40rem;
+  }
+
+  .info-container {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+    float: right;
+    margin-bottom: 2rem;
+  }
+}
+
+/*************************************/
+/* BELOW 768px */
+/*************************************/
+@media (max-width: 48em) {
+  .info-container {
+    display: none;
+  }
+
+  .container-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .sec-content {
+    margin-bottom: 5rem;
+  }
+}
+
+/*************************************/
+/* BELOW 416px */
+/*************************************/
+@media (max-width: 26em) {
+  .header {
+    padding: 0 3rem;
+    width: 70%;
+  }
+  .sec-content {
+    margin: 3.8rem 6rem 12rem 6rem;
+  }
+
+  .container-2col {
+    grid-template-columns: 1fr;
+  }
+
+  .col {
+    margin-bottom: 2rem;
+  }
+
+  .label-tag {
+    font-size: 1.6rem;
+    padding: 1.2rem 1.4rem;
+    margin: 0.6rem;
+  }
+
+  .sec-content {
+    margin-bottom: 5rem;
+  }
+}
