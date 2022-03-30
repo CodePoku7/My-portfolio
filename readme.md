@@ -45,6 +45,8 @@ The interesting part for me was to build layout with 2 column parts. One side is
 
 Mobile navigation is always interesting to build as you progress and learn new ways.
 
+Code examples:
+
 ```css
 .container-img {
 background: linear-gradient(
